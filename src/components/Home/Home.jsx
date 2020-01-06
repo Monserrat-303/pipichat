@@ -6,7 +6,7 @@ import UserDashboard from '../../components/Home/UserDashboard';
 
 
 const Home = props => {
-
+    const[withoutCode, setWithoutCode]=useState(false);
     const[logged,setLogged]=useState(false)
 
     const loginHandler = ()=>{
@@ -19,6 +19,7 @@ const Home = props => {
             width:'30vw',
             margin:'10vh',
             textAlign:'center',
+        
             }}
             >
             <Button onClick={()=>loginHandler()}>LOG</Button>
