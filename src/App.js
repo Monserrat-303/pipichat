@@ -4,14 +4,14 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from './components/Home/Home';
 import UserDashboard from './components/Home/UserDashboard';
+import ChatScreen from './components/ChatScreen/ChatScreen';
 
 
 function App() {
   return (
     <div style={{display:'flex'}}> 
     <Router>
-      <Route path="" component={Home}></Route>
-
+      <Route path="" component={ChatScreen}></Route>
     </Router>
     </div>
   );
