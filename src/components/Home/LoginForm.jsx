@@ -17,7 +17,7 @@ const LoginForm = props => {
     }
     return (
        
-        <div>
+        <div style={{alignItems:'center'}}>
              <Form onSubmit={submitHandler}
             style={{
                 height:'30vh',

@@ -1,0 +1,17 @@
+#SideBarContainer{
+   background-color: brown;
+    width:20vw;
+    height:100vh;
+}
+
+h5{
+    padding:0.25em;
+}
+
+#userName{
+    font-size: medium;
+}
+
+#chatTab{
+    background-color: aqua;
+}
