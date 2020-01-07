@@ -1,5 +1,5 @@
 .userCardContainerRow {
-  height: 15vh;
+  height: 77px;
 }
 
 .userCardContainer {
@@ -7,7 +7,7 @@
 }
 
 .chatListContainerRow {
-  height: 85vh;
+  height: 500px;
 }
 
 .chatListContainer {
@@ -15,7 +15,7 @@
 }
 
 .chatHeaderContainerRow {
-  height: 15vh;
+  height: 77px;
 }
 
 .chatHeaderContainer {
@@ -23,7 +23,7 @@
 }
 
 .chatContentContainerRow {
-  height: 85vh;
+  height: 500px;
 }
 
 .chatContentContainer {
