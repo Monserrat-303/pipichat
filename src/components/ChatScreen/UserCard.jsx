@@ -6,13 +6,13 @@ export default class UserCard extends Component {
   render() {
     return (
       <div className="row cardContainer">
-        <img src={userImg} alt="Logo" className="col-2 userImg" />
-        <div className="col-9 py-4 dataContainer">
+        <img src={userImg} alt="Logo" className="col-3 userImg" />
+        <div className="col-6 py-2 px-0 dataContainer">
           <div className="nameContainer">
-            <h3 className="nameData">El Pipi</h3>
+            <h5 className="nameData">El Pipi</h5>
           </div>
           <div className="stateContainer">
-            <h3 className="stateData">Available</h3>
+            <h6 className="stateData">Available</h6>
           </div>
         </div>
       </div>
