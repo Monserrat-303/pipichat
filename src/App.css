@@ -24,3 +24,9 @@
     transform: rotate(360deg);
   }
 }
+
+.app{
+  background-color: #FFBD77;
+  display: flex;
+  flex-direction: column;
+}

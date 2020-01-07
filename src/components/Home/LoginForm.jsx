@@ -2,14 +2,23 @@ import React, {useState} from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import PropTypes from 'prop-types';
+import './LoginFormStyle.css';
+import Logo from '../../assets/pipiLogo.png';
+  
+
 
 const LoginForm = props => {
 
+    const [enteredEmail, setEnteredEmail]=useState('');
+    const [enteredPassword, setEnteredPassword]=useState('');
+    const[withEmail,setEmail]=useState(false)
 
-    const [enteredUsername, setEnteredUsername]=useState('');
-    const [enteredPassword, setEnteredPassword]= useState('');
 
-    console.log(enteredUsername,enteredPassword)
+    console.log(enteredEmail,enteredPassword)
+
+    const emailHandler = ()=>{
+        setEmail(!withEmail);
+    }
 
     const submitHandler =event=>{
         event.preventDefault();
@@ -17,36 +26,32 @@ const LoginForm = props => {
     }
     return (
        
-        <div style={{alignItems:'center'}}>
-             <Form onSubmit={submitHandler}
-            style={{
-                height:'30vh',
-                width:'30vw',
-                margin:'10vh',
-                textAlign:'center'
-                }}>
-                <Form.Group controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" value={enteredUsername}
-                    onChange={event=>{setEnteredUsername(event.target.value)}}/>
-                    <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                </Form.Text>
-                </Form.Group>
+        <div className="pantalla">
+            <img src={Logo} style={{borderRadius:'50%', height:'40vh'}} alt='' />
+            
+            <div className="LoginForm">
+                <p className="LogoTitle">PIPI CHAT ™</p>
+                <Form onSubmit={submitHandler}>
 
-                <Form.Group controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" value={enteredPassword}  
-                    onChange={event=>{setEnteredPassword(event.target.value)}} />
-                </Form.Group>
-                <Form.Group controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
-                <Button variant="primary" type="submit">
-                    Submit
-            </Button>
-            </Form>
-            </div>            
+                    <Form.Group controlId="formBasicEmail">
+                        <Form.Label>Email address</Form.Label>
+                        <Form.Control type="email" placeholder="Enter email" value={enteredEmail}
+                        onChange={event=>{setEnteredEmail(event.target.value)}}/>
+                    </Form.Group>
+
+                    {withEmail===false ? <> <Button onClick={()=>emailHandler()}>SEND</Button><p>No estoy</p></>:
+                    <>  <Form.Group controlId="formBasicPassword">
+                            <Form.Label>Security Code</Form.Label>
+                            <Form.Control type="password" placeholder="Insert Security Code" value={enteredPassword}  
+                                onChange={event=>{setEnteredPassword(event.target.value)}} />
+                        </Form.Group>
+                        
+                        <Button variant="primary" type="submit" style={{display:'flex', alignItems:'center'}}>
+                        Submit
+                    </Button></>}
+                </Form>
+            </div>
+        </div>            
     );
 };
 
