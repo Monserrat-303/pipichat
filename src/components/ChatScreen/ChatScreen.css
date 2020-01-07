@@ -1,15 +1,31 @@
-.userCardContainer{
-  background-color: blue;
+.userCardContainerRow {
+  height: 15vh;
+}
+
+.userCardContainer {
+  background-color: #F26419;
+}
+
+.chatListContainerRow {
+  height: 85vh;
 }
 
 .chatListContainer {
-  background-color: yellow;
+  background-color: rgba(51, 100, 138, 0.178);
 }
 
-.chatHeaderContainer{
-  background-color: red;
+.chatHeaderContainerRow {
+  height: 15vh;
+}
+
+.chatHeaderContainer {
+  background-color: #F6AE2D;
+}
+
+.chatContentContainerRow {
+  height: 85vh;
 }
 
 .chatContentContainer {
-  background-color: green;
+  background-color: #55DDE0;
 }

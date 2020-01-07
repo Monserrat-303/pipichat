@@ -8,10 +8,10 @@ export default class UserCard extends Component {
       <div className="row cardContainer">
         <img src={userImg} alt="Logo" className="col-3 userImg" />
         <div className="col-6 py-2 px-0 dataContainer">
-          <div className="nameContainer">
+          <div className="m-0 nameContainer">
             <h5 className="nameData">El Pipi</h5>
           </div>
-          <div className="stateContainer">
+          <div className="m-0 stateContainer">
             <h6 className="stateData">Available</h6>
           </div>
         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import './SideBar.css'
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import UserCard from './UserCard';
+import userImg from '../../assets/user_logo.png'
 
 const SideBar = props => {
 
@@ -15,13 +15,14 @@ const SideBar = props => {
     ]] = useState();
 
     return (
-        <div id='SideBarContainer'>
-            <UserCard />
+        <div id='SideBarContainer'> 
+
             <div>
                 {chats.map(item =>
-                    <div id='chatTab'>
-                        <p id='userName'>{item.name}</p>
-                        <p>{item.lastMsg}</p>
+                    <div id='chatTab' className='rounded text-white'>
+                        <img id='tabUserPic' src={userImg}/>
+                        <h6 id='userName'>{item.name}</h6>
+                        <p className='lastMsg'>{item.lastMsg}</p>
                     </div>)}
             </div>
         </div>
