@@ -9,7 +9,7 @@ import ChatScreen from './components/ChatScreen/ChatScreen';
 
 function App() {
   return (
-    <div style={{display:'flex'}}> 
+    <div className="h-100"> 
     <Router>
       <Route path="" component={ChatScreen}></Route>
     </Router>

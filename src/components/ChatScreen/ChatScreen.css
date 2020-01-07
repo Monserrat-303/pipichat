@@ -1,0 +1,15 @@
+.userCardContainer{
+  background-color: blue;
+}
+
+.chatListContainer {
+  background-color: yellow;
+}
+
+.chatHeaderContainer{
+  background-color: red;
+}
+
+.chatContentContainer {
+  background-color: green;
+}
