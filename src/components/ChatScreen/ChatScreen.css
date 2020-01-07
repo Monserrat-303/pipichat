@@ -7,11 +7,14 @@
 }
 
 .chatListContainerRow {
-  height: 500px;
+  height    : 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 500px;
 }
 
 .chatListContainer {
-  background-color: rgba(51, 100, 138, 0.178);
+  background-color: #2F4858;
 }
 
 .chatHeaderContainerRow {
@@ -28,4 +31,6 @@
 
 .chatContentContainer {
   background-color: #55DDE0;
+  overflow-y      : scroll;
+  max-height      : 500px;
 }

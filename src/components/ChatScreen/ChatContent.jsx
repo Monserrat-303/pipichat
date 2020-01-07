@@ -48,7 +48,20 @@ const ChatContent = props => {
           <p>{msg.content}</p>
 
           <div id="notification">
-            {checked == false ? <p className="mb-0" >llego</p> : <p className="mb-0" >lei</p>}
+            {/* {checked == false ? <p className="mb-0" >llego</p> : <p className="mb-0" >lei</p>} */}
+            {/* {checked == false ? <> <p className="mb-0" >llego</p> 
+            <p className="pl-2">dd/mm/aaaa  hh:mm:ss</p> </>:
+             <> <p className="mb-0" >lei </p> 
+             <p className="pl-2">dd/mm/aaaa  hh:mm:ss</p> </>} */}
+            {checked == false ?
+              <div className="row mw-100 ml-0">
+                <p className="col-10 mb-0 pl-2">dd/mm/aaaa  hh:mm:ss</p>
+                <p className="col-2 mb-0" >llego</p>
+              </div> :
+              <div className="row mw-100  ml-0">
+                <p className="col-10 mb-0 pl-2">dd/mm/aaaa  hh:mm:ss</p>
+                <p className="col-2 mb-0" >lei </p>
+              </div>}
           </div>
         </div>)}
 
