@@ -3,6 +3,7 @@ import './ChatScreen.css';
 import UserCard from './UserCard.jsx';
 import SideBar from './SideBar';
 import ChatHeader from './ChatHeader';
+import ChatContent from './ChatContent';
 
 
 const ChatScreen = props => {
@@ -11,7 +12,7 @@ const ChatScreen = props => {
       <div className="row h-100">
         <div className="col-3">
           <div className="row userCardContainerRow">
-            <div className="col-12 p-0 pl-5 mh-100 userCardContainer">
+            <div className="col-12 p-0 pl-sm-0 pl-md-3 pl-lg-4 mh-100 userCardContainer">
               <UserCard />
             </div>
           </div>
@@ -29,7 +30,7 @@ const ChatScreen = props => {
           </div>
           <div className="row chatContentContainerRow">
             <div className="col-12 chatContentContainer">
-              <p>chatContent</p>
+              <ChatContent />
             </div>
           </div>
         </div>
