@@ -39,7 +39,7 @@ const LoginForm = props => {
                         onChange={event=>{setEnteredEmail(event.target.value)}}/>
                     </Form.Group>
 
-                    {withEmail===false ? <> <Button onClick={()=>emailHandler()}>SEND</Button><p>No estoy</p></>:
+                    {withEmail===false ? <> <Button onClick={()=>emailHandler()}>SEND</Button></>:
                     <>  <Form.Group controlId="formBasicPassword">
                             <Form.Label>Security Code</Form.Label>
                             <Form.Control type="password" placeholder="Insert Security Code" value={enteredPassword}  

@@ -20,10 +20,10 @@ const Home = props => {
             
             <LoginForm />
             <Footer />
+
             {/*<Button onClick={()=>loginHandler()}>LOG</Button>
             logged===false ? <><p>not logged</p><LoginForm/></>:
             <><p>logged</p><UserDashboard/></>*/}
-        
         </div>
     );
 };
