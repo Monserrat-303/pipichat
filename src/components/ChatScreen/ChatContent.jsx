@@ -3,12 +3,19 @@ import './ChatContent.css';
 import Button from 'react-bootstrap/Button';
 import PropTypes from 'prop-types';
 
+
+
 const ChatContent = props => {
 
   const [checked, setChecked] = useState(false)
   const checkedHandler = () => {
     setChecked(!checked);
   }
+
+  const[enteredMessage,setEnterdMessage]=useState('')
+ 
+  console.log(enteredMessage)
+
 
   const [messages = [
     {
@@ -64,7 +71,7 @@ const ChatContent = props => {
               </div>}
           </div>
         </div>)}
-
+        <input onChange={event=>setEnterdMessage(event.target.value)}></input><Button >Enviar</Button>
       <Button onClick={checkedHandler}>Notif</Button>
     </div>
   );
