@@ -9,9 +9,12 @@ import ChatScreen from './components/ChatScreen/ChatScreen';
 
 function App() {
   return (
-    <div className="h-100"> 
+    <div className="h-100 app"> 
     <Router>
+      <Switch>
+        <Route path="/index" component={Home}></Route>
       <Route path="" component={ChatScreen}></Route>
+      </Switch>
     </Router>
     </div>
   );
